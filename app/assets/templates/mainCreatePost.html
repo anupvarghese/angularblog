@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="text-center"><strong> {{action}} {{verb}} post</strong></h1>
+  <form class="form-inline" role="form">
+    <fieldset>
+      <label><strong>Title</strong></label>
+      <input type="text" class="form-control" ng-model="formData.newPostTitle" placeholder="New Post" type="text" maxlength="250">
+      <label><strong>Body</strong></label>
+      <textarea class="form-control" rows="3" style="height: 250px" ng-model="formData.newPostContents" placeholder="Type your post here..."></textarea>
+      <label><strong></strong></label>
+      <div>
+        <button type="button" class="btn btn-primary" ng-click="doPost()">{{action}}</button>
+        <button class="btn btn-danger pull-right" ng-click="clearPost()">Clear post</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
